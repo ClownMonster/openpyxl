@@ -2,7 +2,8 @@
 import openpyxl
 import os
 import sys
-wb = " "
+
+wb = " " # declaring global wb variable
 class pyxl:
   
   #constructor of the class pyxl
@@ -14,13 +15,13 @@ class pyxl:
   #method to load the sheet 
   def load_sheet(self):
     global wb
-    wb = openpyxl.load_workbook(self.path)
-    sheet = wb.active
+    wb = openpyxl.load_workbook(self.path) # loding your xlsx sheet to your wb
+    sheet = wb.active # activating wb to start accessing  data from it
     return sheet
 
   def save_the_file(self):
     global wb
-    wb.save("mohan.xlsx")
+    wb.save("mohan.xlsx") # Saving the changes you have made to your file
   pass
 #End of the class
 
@@ -29,7 +30,10 @@ class pyxl:
 def data_entry(S):
   row_no = int(input("Enter the Row number where you need to enter the data : "))
   col_no = int(input("Enter the column number where you need to enter the data : "))
-  S.cell(row = row_no, column = col_no ).value = str(input("Enter the value tobe added :"))
+  if row_no <=0 or col_no <= 0:
+    print("The row or column value Doesn't exits")
+    data_entry(S)
+  S.cell(row = row_no, column = col_no ).value = str(input("Enter the value tobe added :")) # assigning the value of the respective cell
   return
 
 
@@ -44,8 +48,8 @@ def print_data(S):
     
 
 #main function
-if __name__== '__main__':
-  o = pyxl(input("Enter the path for the xlsx file : "))
+if __name__== '__main__':  
+  o = pyxl(input("Enter the path for the xlsx file : ")) # Taking the input path 
   sheet =  o.load_sheet()
   while(True):
     try:
