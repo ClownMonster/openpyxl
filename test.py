@@ -30,7 +30,7 @@ class pyxl:
 def data_entry(S):
   row_no = int(input("Enter the Row number where you need to enter the data : "))
   col_no = int(input("Enter the column number where you need to enter the data : "))
-  if row_no <=0 or col_no <= 0:
+  if row_no <=0  or  col_no <= 0:
     print("The row or column value Doesn't exits")
     data_entry(S)
   S.cell(row = row_no, column = col_no ).value = str(input("Enter the value tobe added :")) # assigning the value of the respective cell
