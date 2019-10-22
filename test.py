@@ -13,7 +13,7 @@ class pyxl:
     pass
 
   #method to load the sheet 
-  def load_sheet(self)
+  def load_sheet(self):`
     global wb
     wb = openpyxl.load_workbook(self.path) # loding your xlsx sheet to your wb
     sheet = wb.active # activating wb to start accessing  data from it
