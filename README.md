@@ -7,5 +7,4 @@
 # The use the command --> pip3 install openpyxl
 
 
-# To Access the openpyxl you need to have LibreOffice pre installed in your system and the file should not have any security key
-# access type
+# To Access the openpyxl you need to have LibreOffice pre installed in your system and the file should not have any security key to access
