@@ -5,3 +5,7 @@
 # make virtualenv using pip3 --> syntax =  virtualenv <<name>>
 # Activate virtualenv --> for windows  --> source <<name>>/Scripts/activate  || for mac/linux ->> source <<name>>/bin/activate
 # The use the command --> pip3 install openpyxl
+
+
+# To Access the openpyxl you need to have LibreOffice pre installed in your system and the file should not have any security key
+# access type
