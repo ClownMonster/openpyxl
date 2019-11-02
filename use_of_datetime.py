@@ -16,3 +16,4 @@ year_array = c[0].split("-") # spliting the string to blocks like year month dat
 year = int(year_array[0]) # 0th index has year so accesing it  you can even print to ensure
 
 month = int(year_array[1]) # 1th index has month 
+
