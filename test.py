@@ -3,7 +3,7 @@ import openpyxl
 import os
 import sys
 
-wb = " " # declaring global wb variable
+wb = " " 
 class pyxl:
   
   #constructor of the class pyxl
