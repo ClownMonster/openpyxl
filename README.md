@@ -1,5 +1,6 @@
-# It is an py code to load the xlsx file and access the data by loading
+# It is an py code to load the xlsx file and access the data in that file by loading
 # You can add the data to the the file and save it 
+# you can even create the file or delete the file 
 # At path address provide the full path adress location of the file or plce the file at the same directory of the souce code
 # To start you need python3 and pip3
 # make virtualenv using pip3 --> syntax =  virtualenv <<env name>>
