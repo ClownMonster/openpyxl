@@ -28,8 +28,8 @@ class pyxl:
 
 
 def data_entry(S):
-  row_no = int(input("Enter the Row number where you need to enter the data : "))
-  col_no = int(input("Enter the column number where you need to enter the data : "))
+  row_no = int(input("Enter the Row number where you need to enter the data : ")) # hold the row to place the data
+  col_no = int(input("Enter the column number where you need to enter the data : ")) # hold the column to place the data
   if row_no <=0  or  col_no <= 0:
     print("The row or column value Doesn't exits")
     data_entry(S)
@@ -49,7 +49,7 @@ def print_data(S):
 
 #main function
 if __name__== '__main__':  
-  o = pyxl(input("Enter the path for the xlsx file : ")) # Taking the input path 
+  o = pyxl(input("Enter the path for the xlsx file : ")) # Taking the input path if the file is in the same folder you can just give the name of the file
   sheet =  o.load_sheet()
   while(True):
     try:
